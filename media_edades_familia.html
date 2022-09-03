@@ -1,0 +1,45 @@
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    //var edadPadre = 42;
+    //var edadMadre = 38;
+    //var edadHijo = 15;
+    //var edadHija = 12;
+
+    //var totalEdad = edadPadre + edadHija + edadHijo + edadMadre;
+
+    //var mediaEdad = totalEdad / 4 
+
+    //imprimir("la media de las edades es " + mediaEdad);
+
+
+    var numeroMiembros = parseInt(prompt("ingrese la cantidad de miembros de su familia: "));
+    var contador = 1;
+    var totalEdades = 0
+
+    while (contador <= numeroMiembros) {
+        
+        
+        edad = parseInt(prompt("ingrese la edad del familiar "));
+        totalEdades = totalEdades + edad; 
+        contador = contador + 1;
+    
+    }
+
+    mediaEdades = totalEdades/numeroMiembros;
+
+    imprimir("la media de las edades es: " + mediaEdades);
+    
+
+
+</script>
